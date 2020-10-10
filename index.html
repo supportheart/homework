@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function hello() {
+        alert("주문이 완료되었습니다!");
+      }
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Noto Serif KR", serif;
+      }
+      .mb-3 {
+        width: 500px;
+        margin: auto;
+      }
+
+      .button {
+        width: 90px;
+        margin: auto;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .img {
+        width: 500px;
+        margin: auto;
+      }
+      h1,
+      h5 {
+        display: inline;
+      }
+      p {
+        width: 500px;
+      }
+      .info {
+        width: 500px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img">
+      <img
+        src="https://www.luxurydol.com/data/item/1444721500/thumb-mask5_380x380.jpg"
+        alt="사진입니다"
+      />
+    </div>
+    <div class="info">
+      <h1>마스크팝니다</h1>
+      <h5>가격: 20,000원/5묶음</h5>
+      <p>
+        3단접이식 인체공학적 디자인으로 꺼내서 바로 사용하실수 있게 반으로 접혀
+        있어 사용하기 편리합니다.
+      </p>
+    </div>
+
+    <!-- 정보입력창 -->
+    <div class="mb-3">
+      <div class="input-group is-invalid">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validatedInputGroupPrepend"
+            >주문자 이름</span
+          >
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-describedby="validatedInputGroupPrepend"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- 수량선택칭 -->
+    <div class="mb-3">
+      <div class="input-group is-invalid">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="validatedInputGroupSelect"
+            >수량</label
+          >
+        </div>
+        <select class="custom-select" id="validatedInputGroupSelect" required>
+          <option value="">--수량을 선택하세요--</option>
+          <option value="1">5묶음</option>
+          <option value="2">10묶음</option>
+          <option value="3">15묶음</option>
+        </select>
+      </div>
+    </div>
+    <!-- 정보입력창 -->
+    <div class="mb-3">
+      <div class="input-group is-invalid">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validatedInputGroupPrepend"
+            >주소</span
+          >
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-describedby="validatedInputGroupPrepend"
+          required
+        />
+      </div>
+    </div>
+    <!-- 정보입력창 -->
+    <div class="mb-3">
+      <div class="input-group is-invalid">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="validatedInputGroupPrepend"
+            >전화번호</span
+          >
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-describedby="validatedInputGroupPrepend"
+          required
+        />
+      </div>
+    </div>
+    <div class="button">
+      <button onclick="hello()" type="button" class="btn btn-primary">
+        주문하기
+      </button>
+    </div>
+  </body>
+</html>
